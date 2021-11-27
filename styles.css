@@ -1,0 +1,29 @@
+* {
+    font-family: 'Roboto Slab', serif;
+}
+
+.jumbotron {
+    background-image: url("Hikes/pexels-sagui-andrea-618833.jpg");
+    height: 300px;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: #33865d;
+}
+
+a {
+    color: white;
+}
+
+#header {
+    color: white;
+}
+
+#mtPilPhoto {
+    size: 100px 100px;
+}
+
+img {
+    filter: drop-shadow(4px 4px black);
+}
