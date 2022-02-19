@@ -38,13 +38,88 @@
                 <ul class="navbar-nav">
                     <li class="nav-item col-xs-4"><a class="nav-link" href="home.html"><i class="fa fa-home fa-lg"></i>Home</a></li>
                     <li class="nav-item col-xs-4"><a class="nav-link" href="trails.html">Trails</a></li>
-                    <li class="nav-item active col-xs-4"><a class="nav-link" href="#">Pathfinder Quiz</a></li>
+                    <li class="nav-item active col-xs-4"><a class="nav-link" href="#">Find a Trail</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
+    <div class="container">
+        <div class="header mt-4">
+            <h3 class="modal-title mb-3">Find your next adventure . . .</h3>
+        </div>
+        <div class="body">
+            <div class="container-fluid">
+                <form>
+                    <div class="row form-group">
+                        <label class="col-sm-6 col-form-label" for="trailLength">Length of Trail</label>
+                        <div class="col">
+                            <select class="form-control" name="trailLength" id="trailLength">
+                                <option>Select...</option>
+                                <option value="Less than 1">< 1 mile</option>
+                                <option value="1-2">1 - 2 miles</option>
+                                <option value="2-3">2 - 3 miles</option>
+                                <option value="3-4">3 - 4 miles</option>
+                                <option value="4-5">4 - 5 miles</option>
+                                <option value="5-6">5 - 6 miles</option>
+                                <option value="6-7">6 - 7 miles</option>
+                                <option value="7-8">7 - 8 miles</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <label class="col-sm-6 col-form-label" for="elGain">Elevation Gain (Difficulty)</label>
+                        <div class="col">
+                            <select class="form-control" name="elGain" id="elGain">
+                                <option>Select...</option>
+                                <option value="0">0 ft (Very Easy)</option>
+                                <option value="500">500 ft (Easy)</option>
+                                <option value="1000">1000 ft (Moderate)</option>
+                                <option value="1500">1500 ft (Moderately Difficult)</option>
+                                <option value="2000">2000 ft (Difficult)</option>
+                                <option value=">2000">> 2000 ft (Very Difficult)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <label class="col-sm-6 col-form-label" for="date">Trail Features</label>
+                        <div class="col-sm-6">
+                            <div class="col" type="checkbox" id="date" name="date"
+                                placeholder="Enter date">
+                                <input type="checkbox">Flowers</input>
+                                <input type="checkbox">Mountain Views</input>
+                                <input type="checkbox">Waterfalls</input>
+                                <input type="checkbox">Rock Formations</input>
+                                <input type="checkbox">Mountain Views</input>
+                                <input type="checkbox">Waterfalls</input>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <label class="col-sm-6 col-form-label">Bug Severity</label>
+                        <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
+                            <!--Customized color classes for improved user experience.-->
+                            <label class="btn btn-info campsite-type-btn active">
+                                <input type="radio" autocomplete="off" checked> Low
+                            </label>
+                            <label class="btn btn-warning campsite-type-btn">
+                                <input type="radio" autocomplete="off"> Moderate
+                            </label>
+                            <label class="btn btn-danger campsite-type-btn">
+                                <input type="radio" autocomplete="off"> High
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col">
+                            <button data-dismiss="modal" class="btn btn-secondary">Cancel</button>
+                            <button class="btn btn-primary" type="submit">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!--FOOTER CODE-->
     <footer class="site-footer mt-5">
@@ -74,5 +149,8 @@
                 tylerstrails@gmail.com</a>
         </div>
     </div>
+
+
+    
 </footer>
 </body>
